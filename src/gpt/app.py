@@ -1,0 +1,12 @@
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+def read_root() -> dict[str, str]:
+    return {"message": "Hello World"}
+
+
+def main() -> None:
+    print("Hello from gpt!")
