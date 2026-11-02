@@ -16,7 +16,9 @@ uv sync
 uv run uvicorn gpt.app:app --reload
 ```
 
-The backend runs at `http://127.0.0.1:8000`. Its current endpoint is `GET /hello`.
+The backend runs at `http://127.0.0.1:8000`. It serves the app at `GET /` and
+provides conversation endpoints at `GET /conversations` and
+`GET /history/{thread_id}`.
 
 ## Run the frontend
 
